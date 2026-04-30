@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Escape the Grid | Official Portfolio</title>
+  <meta name="description"
+    content="Explore Escape the Grid, a high-stakes puzzle adventure featuring multiple game modes and dynamic maze generation.">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="grid-bg"></div>
+
+  <nav id="navbar">
+    <div class="container nav-content">
+      <a href="#" class="logo">Escape The Grid</a>
+      <div class="nav-links">
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#modes">Modes</a>
+        <a href="#maps">Maps</a>
+        <a href="#controls">Controls</a>
+        <a href="#developers">Developers</a>
+        <a href="#credits">Credits</a>
+
+      </div>
+      <div class="mobile-menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <header id="hero" class="hero container">
+    <h1>ESCAPE THE GRID</h1>
+    <p>A strategic escape experience where every turn could lead to freedom — or failure.</p>
+    <a href="#about" class="cta-btn">Enter the Grid</a>
+  </header>
+
+  <main>
+    <section id="about" class="container reveal">
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 6rem; align-items: center;">
+        <div>
+          <h2 style="font-size: 3.5rem; margin-bottom: 2rem;">THE ULTIMATE <span
+              style="color: var(--secondary);">CHALLENGE</span></h2>
+          <p style="color: var(--text-secondary); font-size: 1.2rem; margin-bottom: 3rem; line-height: 1.8;">
+            Escape the Grid is more than just a game it’s a challenge of spatial awareness and strategy. Explore,
+            battle, and complete tasks as you fight your way out of the grid. Navigate through the mazes set across five
+            unique worlds:
+            <strong>
+              <span style="color: var(--pastel-green);">Meadow</span>,
+              <span style="color: var(--pastel-red);">Candy</span>,
+              <span style="color: var(--pastel-blue);">Sky</span>,
+              <span style="color: var(--pastel-purple);">Lavender</span>, and
+              <span style="color: var(--pastel-yellow);">Lemon</span>.
+            </strong>
+          </p>
+          <div style="display: flex; gap: 2rem;">
+            <div class="stat">
+              <h3 style="color: var(--pastel-purple);">5+</h3>
+              <p style="font-size: 0.9rem;">Themes</p>
+            </div>
+            <div class="stat">
+              <h3 style="color: var(--pastel-purple);">3</h3>
+              <p style="font-size: 0.9rem;">Game Modes</p>
+            </div>
+            <div class="stat">
+              <h3 style="color: var(--pastel-purple);">∞</h3>
+              <p style="font-size: 0.9rem;">Mazes</p>
+            </div>
+          </div>
+        </div>
+        <div class="glass-card"
+          style="height: 400px; display: flex; align-items: center; justify-content: center; background: linear-gradient(45deg, var(--primary-glow), rgba(255,255,255,0.5));">
+          <img src="assets/img/character.png" alt="Character Sprite"
+            style="width: 120px; image-rendering: pixelated; filter: drop-shadow(0 0 10px var(--primary));">
+        </div>
+      </div>
+    </section>
+
+    <section id="modes" class="container reveal">
+      <h2 style="text-align: center; font-size: 3rem;">GAME <span style="color: var(--primary);">MODES</span></h2>
+      <div class="modes-grid">
+        <div class="glass-card">
+          <div class="mode-icon"><img src="assets/img/character.png" alt="Escape Mode"
+              style="width: 40px; height: 40px; image-rendering: pixelated; object-fit: contain;"></div>
+          <h3>Escape Mode</h3>
+          <p style="color: var(--text-secondary); margin-top: 1rem;">Find the hidden exit buried deep within the grid.
+            Stealth and speed are your best allies.</p>
+        </div>
+        <div class="glass-card">
+          <div class="mode-icon"><img src="assets/img/cat.png" alt="Battle Mode"
+              style="width: 40px; height: 40px; object-fit: contain;"></div>
+          <h3>Battle Mode</h3>
+          <p style="color: var(--text-secondary); margin-top: 1rem;">Fight for space against relentless opponents.
+            Outmaneuver and outlast in this high-intensity arena.</p>
+        </div>
+        <div class="glass-card">
+          <div class="mode-icon"><img src="assets/img/dino.png" alt="Quest Mode"
+              style="width: 40px; height: 40px; image-rendering: pixelated; object-fit: contain;"></div>
+          <h3>Quest Mode</h3>
+          <p style="color: var(--text-secondary); margin-top: 1rem;">Collect rare artifacts and complete legendary
+            quests. Every star gathered brings you closer to mastery.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="maps" class="container reveal" style="margin-top: 4rem;">
+      <div class="glass-card"
+        style="text-align: center; background: linear-gradient(135deg, rgba(154, 177, 122, 0.2), transparent);">
+        <h2 style="font-size: 2.5rem; margin-bottom: 1.5rem;">DYNAMIC <span style="color: var(--secondary);">MAPS</span>
+        </h2>
+        <p style="color: var(--text-secondary); margin-bottom: 2rem; max-width: 800px; margin-inline: auto;">
+          Break away from the standard box. Experience mazes in various shapes including
+          <span style="color: var(--text-primary); font-weight: 600;">Cross, T-Shape, H-Shape, L-Shape, E-Shape,
+            U-Shape, and C-Shape.</span>
+          Each map layout presents unique tactical challenges.
+        </p>
+        <div style="display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap;">
+          <span class="badge">RECTANGLE</span>
+          <span class="badge">CROSS</span>
+          <span class="badge">T-SHAPE</span>
+          <span class="badge">H-SHAPE</span>
+          <span class="badge">L-SHAPE</span>
+          <span class="badge">E-SHAPE</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="controls" class="controls-section reveal">
+      <div class="container" style="text-align: center;">
+        <h2 style="font-size: 2.5rem; margin-bottom: 2rem;">MASTER THE <span
+            style="color: var(--pastel-green);">CONTROLS</span></h2>
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 4rem;">
+          <div>
+            <h4 style="margin-bottom: 1rem;">MOVEMENT</h4>
+            <div class="key-caps">
+              <div class="key">W</div>
+              <div class="key">A</div>
+              <div class="key">S</div>
+              <div class="key">D</div>
+            </div>
+            <p style="margin-top: 1rem; color: var(--text-secondary);">Or Use Arrow Keys</p>
+          </div>
+          <div>
+            <h4 style="margin-bottom: 1rem;">INTERACT</h4>
+            <div class="key-caps">
+              <div class="key">E</div>
+              <div class="key">B</div>
+              <div class="key">Q</div>
+            </div>
+            <p style="margin-top: 1rem; color: var(--text-secondary);">Mode Specific Keys</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="developers" class="container reveal">
+      <h2 style="text-align: center; font-size: 3rem; margin-bottom: 4rem;">THE <span
+          style="color: var(--primary);">DEVELOPERS</span></h2>
+      <div class="developers-grid">
+        <div class="glass-card dev-card">
+          <div class="dev-avatar-container">
+            <img src="assets/dev/matt.jpg" alt="Matt" class="dev-avatar-img">
+          </div>
+          <h3 class="dev-codename">ZAE</h3>
+          <p class="dev-role">Lead Developer</p>
+          <div class="dev-skill">Python & Figma</div>
+        </div>
+        <div class="glass-card dev-card">
+          <div class="dev-avatar-container">
+            <img src="assets/dev/leonard.jpg" alt="Leonard" class="dev-avatar-img">
+          </div>
+          <h3 class="dev-codename">KIM LEO</h3>
+          <p class="dev-role">Developer</p>
+          <div class="dev-skill">Python</div>
+        </div>
+        <div class="glass-card dev-card">
+          <div class="dev-avatar-container">
+            <img src="assets/dev/denmark.jpg" alt="Denmark" class="dev-avatar-img">
+          </div>
+          <h3 class="dev-codename">DINDINN</h3>
+          <p class="dev-role">UI/UX Designer</p>
+          <div class="dev-skill">Python & Java</div>
+        </div>
+        <div class="glass-card dev-card">
+          <div class="dev-avatar-container">
+            <img src="assets/dev/jasmine.jpg" alt="Jasmine" class="dev-avatar-img">
+          </div>
+          <h3 class="dev-codename">MIN</h3>
+          <p class="dev-role">UI/UX Designer</p>
+          <div class="dev-skill">Python</div>
+        </div>
+        <div class="glass-card dev-card">
+          <div class="dev-avatar-container">
+            <img src="assets/dev/mark.jpg" alt="Mark" class="dev-avatar-img">
+          </div>
+          <h3 class="dev-codename">DEYB</h3>
+          <p class="dev-role">Developer</p>
+          <div class="dev-skill">Python</div>
+        </div>
+        <div class="glass-card dev-card">
+          <div class="dev-avatar-container">
+            <img src="assets/dev/bernard.png" alt="Bernard" class="dev-avatar-img">
+          </div>
+          <h3 class="dev-codename">GEEBEE</h3>
+          <p class="dev-role">Developer</p>
+          <div class="dev-skill">Python</div>
+        </div>
+        <div class="glass-card dev-card">
+          <div class="dev-avatar-container">
+            <img src="assets/dev/azeaa.jpg" alt="Azeaa" class="dev-avatar-img">
+          </div>
+          <h3 class="dev-codename">SLOTH</h3>
+          <p class="dev-role">UI/UX Designer</p>
+          <div class="dev-skill">Python</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="credits" class="container reveal">
+      <h2 style="text-align: center; font-size: 3rem; margin-bottom: 3rem;">GAME <span
+          style="color: var(--primary);">CREDITS</span></h2>
+      <div class="glass-card">
+        <div class="credits-grid"
+          style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 3rem;">
+          <div>
+            <h4 style="color: var(--primary); margin-bottom: 1.5rem; text-transform: uppercase; letter-spacing: 2px;">
+              Visuals</h4>
+            <ul class="credits-list">
+              <li>
+                <div style="display: flex; align-items: center; gap: 1rem;">
+                  <img src="assets/img/character.png" style="width: 24px; height: 24px; image-rendering: pixelated;"
+                    alt="">
+                  <span>Hero Sprite</span>
+                </div>
+                <span>Itch.io</span>
+              </li>
+              <li>
+                <div style="display: flex; align-items: center; gap: 1rem;">
+                  <img src="assets/img/cat.png" style="width: 24px; height: 24px; object-fit: contain;" alt="">
+                  <span>Cat Sprite</span>
+                </div>
+                <span>Itch.io</span>
+              </li>
+              <li>
+                <div style="display: flex; align-items: center; gap: 1rem;">
+                  <img src="assets/img/dino.png" style="width: 24px; height: 24px; object-fit: contain;" alt="">
+                  <span>Dino Sprite</span>
+                </div>
+                <span>Itch.io</span>
+              </li>
+              <li>
+                <div style="display: flex; align-items: center; gap: 1rem;">
+                  <img src="assets/img/coin.png" style="width: 24px; height: 24px; image-rendering: pixelated;" alt="">
+                  <span>Collectibles</span>
+                </div>
+                <span>Itch.io</span>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 style="color: var(--primary); margin-bottom: 1.5rem; text-transform: uppercase; letter-spacing: 2px;">
+              Audio</h4>
+            <ul class="credits-list">
+              <li><span>In-game Music</span> <span>pixabay</span></li>
+              <li><span>In-game Music</span> <span>pixabay</span></li>
+              <li><span>In-game Music</span> <span>pixabay</span></li>
+              <li><span>Sound Effects</span> <span>pixabay</span></li>
+            </ul>
+          </div>
+          <div>
+            <h4 style="color: var(--primary); margin-bottom: 1.5rem; text-transform: uppercase; letter-spacing: 2px;">
+              Typography</h4>
+            <ul class="credits-list">
+              <li><span>Main Font</span> <span>VCR OSD Mono</span></li>
+              <li><span>In-game Font</span> <span>VCR OSD Mono</span></li>
+              <li><span>Secondary Font</span> <span>Minecraft Font</span></li>
+              <li><span>Accent Font</span> <span>System Font</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <footer class="container" style="padding: 4rem 0; text-align: center; border-top: 1px solid var(--glass-border);">
+    <p style="color: var(--text-secondary);">© 2026 Escape the Grid. Universidad de Dagupan.</p>
+  </footer>
+
+  <div id="mode-modal" class="modal-overlay">
+    <div class="modal-content glass-card">
+      <button class="close-modal">&times;</button>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+
+  <script src="script.js" defer></script>
+</body>
+
+</html>
